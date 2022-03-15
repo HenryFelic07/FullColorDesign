@@ -1,81 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Registrar">
 
-    <FrameLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
-        <LinearLayout
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingresar los Campos "
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registrarTextFieldUser"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Llene los campos "
-                android:textSize="34sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
+            android:layout_height="wrap_content"
+            android:hint="User"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_user_24">
 
             <EditText
-                android:id="@+id/txtUser"
-                android:layout_width="161dp"
-                android:layout_height="44dp"
-                android:hint="Usuario"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                tools:layout_editor_absoluteX="105dp"
-                tools:layout_editor_absoluteY="222dp" />
-
-            <EditText
-                android:id="@+id/txtMail"
-                android:layout_width="161dp"
-                android:layout_height="44dp"
-                android:hint="Correo"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                tools:layout_editor_absoluteX="105dp"
-                tools:layout_editor_absoluteY="222dp" />
-
-            <EditText
-                android:id="@+id/txtContra"
-                android:layout_width="161dp"
-                android:layout_height="44dp"
-                android:hint="Contraseña"
-                android:textColor="@color/white"
-                android:textColorHint="#FFFFFF"
-                android:inputType="textPassword"
-                tools:layout_editor_absoluteX="105dp"
-                tools:layout_editor_absoluteY="222dp" />
-
-            <Button
-                android:id="@+id/btnGuardar"
+                android:id="@+id/registrarEditTextUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-                android:text="Registrar"
-                android:textSize="18sp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registrarTextFieldCorreo"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_email_24">
 
-        </LinearLayout>
+            <EditText
+                android:id="@+id/registrarEditTextCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registrarTextFieldContrasena"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            app:errorEnabled="true"
+            app:startIconDrawable="@drawable/ic_password_24">
 
-    </FrameLayout>
+            <EditText
+                android:id="@+id/registrarEditTextContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/registrarButtonRegistrar"
+            style="@style/Boton"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:text="Registrar"
+            android:textColor="#0B0B0B"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

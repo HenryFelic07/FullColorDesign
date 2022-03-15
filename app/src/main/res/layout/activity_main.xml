@@ -50,14 +50,14 @@
             android:layout_height="wrap_content"
             android:hint="Password"
             app:startIconDrawable= "@drawable/ic_password_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:errorEnabled="true">
 
             <EditText
                 android:id="@+id/mainEditTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="35dp"
-                android:backgroundTint="#FFFFFF"
+                android:layout_marginTop="25dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
@@ -66,16 +66,27 @@
 
 
         <Button
-            android:id="@+id/mainButtonIngresar"
+            android:id="@+id/mainButtonIniciarSesion"
             style="@style/Boton"
-            android:layout_width="150dp"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="35dp"
-            android:backgroundTint="@color/amarrillo"
-            android:text="Ingresar"
+            android:layout_marginTop="20dp"
+            android:text="Iniciar Sesión"
             android:textColor="#0B0B0B"
             android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/mainButtonRegistrarse"
+            style="@style/Boton"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:text="Registrarse"
+            android:textColor="#0B0B0B"
+            android:textSize="24sp" />
+
     </LinearLayout>
 
 </LinearLayout>

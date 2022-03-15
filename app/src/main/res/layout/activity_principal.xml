@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PrincipalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/principalTextViewBienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Bienvenido a"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/principalButtonIdeasDiseno"
+            style="@style/BotonIcono"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Ideas de Diseño"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_ver_diseno_24" />
+
+        <Button
+            android:id="@+id/principalButtonExplorarColor"
+            style="@style/BotonIcono"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Explorar Colores"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_explorar_color_24" />
+
+        <Button
+            android:id="@+id/principalButtonMiDiseno"
+            style="@style/BotonIcono"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Mi Diseño"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_mi_idea_24" />
+
+        <Button
+            android:id="@+id/principalButtonFerreteria"
+            style="@style/BotonIcono"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Ferreteria"
+            android:textColor="#0B0B0B"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_add_cart_24" />
+    </LinearLayout>
+
+</LinearLayout>
