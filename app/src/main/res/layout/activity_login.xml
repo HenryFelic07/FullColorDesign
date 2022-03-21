@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.fullcolordesign.activities.LoginActivity">
+
+    <!--barra herramienta-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_rect01"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/creatine_youth"
+            android:text="FullColorDesign"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconIv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/shape_circle01"
+        android:padding="5dp"
+        android:src="@drawable/ic_key_white" />
+
+    <EditText
+        android:id="@+id/mailET"
+        android:layout_below="@id/iconIv"
+        android:hint="Correo electrónico"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_email_gray"
+        android:drawablePadding="5dp"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/shape_rect02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_email_gray" />
+
+    <EditText
+        android:id="@+id/passET"
+        android:layout_below="@id/mailET"
+        android:hint="Contraseña"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_key_gray"
+        android:drawablePadding="5dp"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/shape_rect02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_key_gray" />
+
+    <TextView
+        android:id="@+id/forgotTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:layout_below="@+id/passET"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/iniloginB"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotTV"
+        android:layout_marginTop="28dp"
+        android:background="#4D96B8"
+        android:minWidth="150dp"
+        android:text="Iniciar Sesión" />
+
+    <TextView
+        android:id="@+id/noCuentaTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="¿No tienes una cuenta? REGISTRATE"/>
+
+
+
+
+
+
+
+</RelativeLayout>
