@@ -205,7 +205,7 @@ public class AddProductActivity extends AppCompatActivity {
         else {
             //upload with image
 
-            //primero actualizar la inagen del almacenamiento
+            //primero actualizar la imagen del almacenamiento
 
             //nombre y path de la imagen
             String filePathAndName = "product_images/" + "" + timestamp;

@@ -41,25 +41,17 @@
             android:layout_alignParentRight="true" />
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/iconIv"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/shape_circle01"
-        android:padding="5dp"
-        android:src="@drawable/ic_key_white" />
+
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/iconIv">
+        android:layout_marginTop="100dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <com.blogspot.atifsoftwares.circularimageview.CircularImageView
                 android:id="@+id/perfilIV"
                 android:layout_width="100dp"
@@ -238,10 +230,13 @@
                 android:layout_below="@id/registrarB"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_margin="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="0dp"
-                android:text="¿Eres vendedora? REGISTRATE VENDEDORA" />
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="¿Eres vendedor? REGISTRATE VENDEDOR" />
         </RelativeLayout>
 
     </ScrollView>

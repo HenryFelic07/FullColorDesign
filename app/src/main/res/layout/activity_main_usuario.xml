@@ -94,7 +94,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/shape_rect04"
                 android:gravity="center"
-                android:text="DISEÑOS"
+                android:text="FERRETERIA"
                 android:textColor="@color/colorBlack" />
 
             <!--Ordeenes-->

@@ -54,7 +54,7 @@ public class AdapterProductVendedor extends RecyclerView.Adapter<AdapterProductV
 
         //set data
         holder.titleTv.setText(title);
-        holder.quantityTv.setText(quantity);
+        holder.quantityTv.setText(productDescription);
         holder.originalPriceTv.setText("$"+originalPrice);
 
         //aquí puede estar la falla

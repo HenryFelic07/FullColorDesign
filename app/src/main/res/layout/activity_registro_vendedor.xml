@@ -237,25 +237,30 @@
 
             <EditText
                 android:id="@+id/confpassET"
-                android:layout_below="@id/passET"
-                android:hint="Confirmar contraseña"
-                android:padding="10dp"
-                android:drawableStart="@drawable/ic_key_gray"
-                android:drawablePadding="5dp"
-                android:layout_margin="5dp"
-                android:inputType="textPassword"
-                android:background="@drawable/shape_rect02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_key_gray" />
-            
+                android:layout_below="@id/passET"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shape_rect02"
+                android:drawableStart="@drawable/ic_key_gray"
+                android:drawableLeft="@drawable/ic_key_gray"
+                android:drawablePadding="5dp"
+                android:hint="Confirmar contraseña"
+                android:inputType="textPassword"
+                android:padding="10dp" />
+
             <Button
                 android:id="@+id/registrarB"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_centerHorizontal="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/confpassET"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="28dp"
                 android:background="#4D96B8"
                 android:minWidth="150dp"

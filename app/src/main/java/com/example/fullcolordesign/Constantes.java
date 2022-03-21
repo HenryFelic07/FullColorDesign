@@ -4,11 +4,14 @@ public class Constantes {
 
     //categorias productos
     public static final String[] productCategories = {
-            "Plántulas"
+            "Dormitorio","Sala","Cosina","Baño"
     };
 
     public static final String[] productCategories1 = {
             "All",
-            "Plántulas"
+            "Dormitorio",
+            "Sala",
+            "Cosina",
+            "Baño"
     };
 }
